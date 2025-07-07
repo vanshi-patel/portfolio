@@ -112,7 +112,7 @@ const projects = [
         ],
         technologies: ['ASP.NET', 'C#', 'SQL Server', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap'],
         image: './project-imgs/project-2.PNG',
-        githubLink: 'https://github.com/Vanshi-patel/NailTrendZ_Project'
+        githubLink: 'https://github.com/vanshi-patel/NailTrendZ_Project'
     },
     {
         title: 'Mehendi Booking Platform',
@@ -127,7 +127,7 @@ const projects = [
         ],
         technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap'],
         image: './project-imgs/project-1.PNG',
-        githubLink: 'https://github.com/Vanshi-patel/Mahendi_Project'
+        githubLink: 'https://github.com/vanshi-patel/Mahendi_Project'
     }
 ];
 
