@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            try {
+                emailjs.init("YOUR_PUBLIC_KEY"); // ← Replace this after getting your public key
+                console.log('EmailJS initialized successfully');
+            } catch (error) {
+                console.error('EmailJS initialization error:', error);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Depani Vanshi</span></h1>
+            <p class="animate-text-delay">BCA Graduate | Web Developer</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-primary">Get In Touch</a>
+                <a href="#projects" class="cta-secondary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate BCA graduate from Atmiya University with an outstanding academic record. Throughout my academic journey, I've maintained exceptional performance with a cumulative CGPA of 9.81, demonstrating strong analytical and problem-solving abilities. My comprehensive understanding of computer applications and programming has equipped me with practical skills in software development, database management, and web technologies.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>vanshidepani@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rajkot, Gujarat</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>BCA Graduate 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title">Education & Achievements</h2>
+        <div class="education-card">
+            <div class="edu-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-details">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p class="institute">Atmiya University, Rajkot</p>
+                <p class="year">2022 - 2025</p>
+                <p class="grade">CGPA: 9.81 (First Class - Exemplary)</p>
+                <div class="achievements">
+                    <h4>Academic Highlights:</h4>
+                    <ul>
+                        <li>Maintained consistently high performance across all semesters</li>
+                        <li>Scored 100/100 in multiple core subjects including RDBMS and OOP with C++</li>
+                        <li>Achieved 93.62% in overall academics</li>
+                        <li>Perfect score in Database practical examinations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-card cmat-card">
+            <div class="edu-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="edu-details">
+                <h3>CMAT 2025 (Common Management Admission Test)</h3>
+                <p class="institute">National Testing Agency (NTA)</p>
+                <div class="cmat-scores">
+                    <div class="score-grid">
+                        <div class="score-item">
+                            <span class="score-label">All India Rank</span>
+                            <span class="score-value">25480</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="score-label">Overall Percentile</span>
+                            <span class="score-value">59.84</span>
+                        </div>
+                    </div>
+                    <h4>Section-wise Scores:</h4>
+                    <div class="section-scores">
+                        <div class="section-score">
+                            <span>Quantitative Techniques & Data Interpretation</span>
+                            <span class="score">48.23</span>
+                        </div>
+                        <div class="section-score">
+                            <span>Logical Reasoning</span>
+                            <span class="score">74.29</span>
+                        </div>
+                        <div class="section-score">
+                            <span>Language Comprehension</span>
+                            <span class="score">79.84</span>
+                        </div>
+                        <div class="section-score">
+                            <span>General Awareness</span>
+                            <span class="score">25.73</span>
+                        </div>
+                        <div class="section-score">
+                            <span>Innovation and Entrepreneurship</span>
+                            <span class="score">58.25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Academic Proficiency</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Core Subjects</h3>
+                <div class="skill-cards">
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Programming Fundamentals</h4>
+                        <ul>
+                            <li>C Programming</li>
+                            <li>Object Oriented Programming (C++)</li>
+                            <li>Java Programming</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h4>Database Management</h4>
+                        <ul>
+                            <li>Relational Database Concepts</li>
+                            <li>SQL & Oracle</li>
+                            <li>Data Structure</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>Web Technologies</h4>
+                        <ul>
+                            <li>Web Programming</li>
+                            <li>ASP.NET</li>
+                            <li>Web Services & APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Additional Coursework</h3>
+                <div class="skill-cards">
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Computer Fundamentals</h4>
+                        <ul>
+                            <li>Computer Organization</li>
+                            <li>Operating Systems</li>
+                            <li>System Analysis & Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Mathematical Foundation</h4>
+                        <ul>
+                            <li>Statistical Techniques</li>
+                            <li>Mathematical Analysis</li>
+                            <li>Data Science Basics</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4>Project Work</h4>
+                        <ul>
+                            <li>Software Development</li>
+                            <li>Problem Solving</li>
+                            <li>Technical Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <!-- Project cards will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Details</h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <p>+91 9499677390</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>vanshidepani@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-info">
+                        <h3>Location</h3>
+                        <p>Rajkot, Gujarat, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/VanshiDepani" target="_blank">github.com/VanshiDepani</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vanshi-depani-6b72512a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/VanshiDepani" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/_postperfectly/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Depani Vanshi. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
